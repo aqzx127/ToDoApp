@@ -1,1 +1,0 @@
-// Render table to serve as inbox and archive of all tasks (using Components)
