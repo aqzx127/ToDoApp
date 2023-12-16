@@ -15,3 +15,8 @@ export default function App() {
     <HomeView />
   )
 }
+
+// Color Hex Codes for Site Theme
+// Background - RGB(9, 20, 38)
+// Text - RGB(251, 184, 142)
+// Secondary Background - RGB(241, 119, 84)
