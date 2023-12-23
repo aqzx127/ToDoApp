@@ -9,7 +9,8 @@ root.render(
         domain="dev-qsh22qbc8oa4list.us.auth0.com"
         clientId="Fy6qbhZM9y9Kthy9Tm2mmvMMEzBHzqz4"
         authorizationParams={{
-        redirect_uri: window.location.origin
+        redirect_uri: window.location.origin,
+        audience: "https://mytodosapi.com/"
         }}
         >
         <App />

@@ -6,7 +6,7 @@ import '../style.css'
 import LoginForm from './LoginForm.jsx';
 import { useAuth0 } from "@auth0/auth0-react";
 import { useState } from 'react';
-import AddTaskForm from './AddTaskForm.jsx';
+import AddTaskForm from './AddTodoForm.jsx';
 
 export default function TopNav() {
 
@@ -17,6 +17,7 @@ export default function TopNav() {
     function handleLogin() {
         console.log("Triggered handleLogin()")
         loginWithRedirect();
+
         //setShowLoginForm(true);
     }
 
