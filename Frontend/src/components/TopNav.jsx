@@ -1,7 +1,7 @@
 // Show Logged in user or login button
 
 import Breadcrumbs from '@mui/joy/Breadcrumbs';
-import { Link, Avatar, Button } from '@mui/joy';
+import { Link, Avatar, Button, Box } from '@mui/joy';
 import '../style.css'
 import LoginForm from './LoginForm.jsx';
 import { useAuth0 } from "@auth0/auth0-react";
@@ -56,6 +56,7 @@ export default function TopNav() {
         {showLoginForm && <LoginForm open={showLoginForm} setOpen={setShowLoginForm} />}
         {showAddTodoForm && <AddTaskForm open={showAddTodoForm} setOpen={setShowAddTodoForm} />}
         </>
+        
     );
 }
 

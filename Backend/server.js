@@ -30,22 +30,16 @@ app.use((req, res, next) => {
 });
 
 app.post('/api/todos', (req, res) => {
-
     const userId = req.auth.payload.sub; // The user ID from the JWT
-    console.log(userId);
+    console.log("UserID ", userId);
+
     // Validate the user ID if necessary, and handle the todo creation
     // ...
     // Implement POST to Database (MongoDB)
-    const todos = [];
     console.log("Request Auth", req.auth);
     console.log("Request Body", req.body);
-    todos.push(req.body);
     console.log(todos);
     res.send({ message: 'Todo created successfully by: ' });
-});
-
-app.get('/authorized', function (req, res) {
-    res.send('Secured Resource');
 });
 
 const port = process.env.PORT || 8080;

@@ -17,7 +17,7 @@ export default function LoginForm({ open, setOpen }) {
     const handleSubmitLogin = async (event) => {
         console.log("Login Attempt: ", loginAttempt)
         event.preventDefault();
-        // await submitTodo(todo); 
+        // await submitTodo(todo);
         // Additional actions post submission, like resetting form
         setLoginAttempt({ name: '', description: '' });
         setOpen(false);
